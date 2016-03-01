@@ -1,0 +1,104 @@
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #47a3da;
+    min-width: 400px;
+}
+
+h3 {
+    color: rgb(252,221,0);
+    font-weight: bold;
+    font-family: 'Bangers', cursive;
+}
+
+a {
+    color: black;
+	text-decoration: none;
+    padding-top: 50px;
+}
+
+//Unecessary
+// a:hover {
+// 	color: #555;
+// }
+
+.icon-grid .sub-title{
+    opacity: 0;
+}
+
+ li:hover {
+    background: rgb(252,221,0);
+}
+
+ li:hover .sub-title {
+        color: white;
+        opacity: 1;
+    }
+
+// More failed attemps
+// $icon-color: rgb(252,221,0);
+//
+// li .icon {
+//     color: $icon-color;
+// }
+//
+// li:hover .icon {
+//     $darken($icon-color, 50%);
+// }
+
+.container > header {
+	width: 80%;
+	max-width: 30em;
+	margin-left:  auto;
+    margin-right: auto;
+	padding: .1em;
+    text-align: center;
+    font-size: 3em;
+}
+
+.main {
+	width: 90%;
+	padding: 2em;
+	margin-left: 1em  auto;
+    margin-right: 1em auto;
+    display: inline-block;
+}
+.icon {
+    padding: 2em;
+}
+
+.icon-grid {
+	list-style: none;
+}
+
+.icon-grid li {
+	width: 33%;
+	float: left;
+	height: 200px;
+	text-align: center;
+	border: 1px solid black;
+    padding-top: 3em;
+}
+
+// $breakpoints: (
+//   'pequeno': (max-width: 500px),
+//   'normal': (max-width: 800px),
+//   'grande': (max-width: 1100px),
+// );
+//
+// @mixin pequeno{
+//     @media (min-width:#{$pequeno;}) and (max-width: #{$normal - 1px}){
+//         @content;
+//     }
+// }
+//
+// @mixin normal {
+//   @media (min-width: #{$normal;}) and (max-width: #{$grande - 1px}) {
+//     @content;
+//   }
+// }
+//
+// @mixin grande {
+//   @media (min-width: #{$grande}) {
+//     @content;
+//   }
+// }
