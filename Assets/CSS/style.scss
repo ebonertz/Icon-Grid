@@ -1,7 +1,8 @@
 body {
     font-family: 'Lato', Calibri, Arial, sans-serif;
     color: #47a3da;
-    min-width: 400px;
+    min-width: 300px;
+    max-width: 1500px;
 }
 
 h3 {
@@ -15,6 +16,7 @@ a {
 	text-decoration: none;
     padding-top: 50px;
 }
+
 
 //Unecessary
 // a:hover {
@@ -34,6 +36,10 @@ a {
         opacity: 1;
     }
 
+li:hover .icon {
+    color: orange;
+}
+
 // More failed attemps
 // $icon-color: rgb(252,221,0);
 //
@@ -50,7 +56,8 @@ a {
 	max-width: 30em;
 	margin-left:  auto;
     margin-right: auto;
-	padding: .1em;
+	padding: .2em;
+    padding-right: 2.5em;
     text-align: center;
     font-size: 3em;
 }
@@ -71,12 +78,40 @@ a {
 }
 
 .icon-grid li {
-	width: 33%;
+	width: 30%;
 	float: left;
 	height: 200px;
 	text-align: center;
-	border: 1px solid black;
+	border: 1px solid #eee;
     padding-top: 3em;
+}
+
+@media (max-width: 900px) {
+    .icon-grid li {
+        width: 45%;
+    }
+    h3 {
+        padding-left: .5em;
+}
+header {
+    margin-bottom:-.5em;
+}
+}
+
+@media (max-width: 550px) {
+    .icon-grid li {
+        width: 90%;
+    }
+    h3 {
+        padding-left: 1.5em;
+    }
+
+}
+
+@media (max-width: 432px) {
+    header {
+        margin-bottom: -1em;
+    }
 }
 
 // $breakpoints: (
